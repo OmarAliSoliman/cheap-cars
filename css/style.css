@@ -1,0 +1,398 @@
+@import "https://fonts.googleapis.com/css2?family=Changa&display=swap";
+body {
+  direction: rtl;
+  font-family: 'Changa', sans-serif; }
+
+.clear {
+  clear: both; }
+
+.top-header {
+  padding: 10px; }
+  .top-header .border-bottom {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; }
+  .top-header .info span:first-child {
+    padding: 10px 0px 10px 10px;
+    border-left: 1px solid #ddd; }
+  .top-header .info span:last-child {
+    padding: 10px 10px 10px 0px; }
+  .top-header .info i {
+    color: #1c75bc;
+    margin-left: 5px; }
+  .top-header .social i {
+    color: #555;
+    margin-right: 5px;
+    transition: all 0.5s ease; }
+    .top-header .social i:hover {
+      color: #1c75bc; }
+
+.upper-nav {
+  padding: 5px; }
+  .upper-nav .logo {
+    padding: 5px; }
+    .upper-nav .logo span {
+      font-weight: bold; }
+  .upper-nav .login {
+    padding-top: 10px; }
+    .upper-nav .login ul li {
+      padding: 15px;
+      display: inline-block; }
+      .upper-nav .login ul li .btn-login {
+        color: #444; }
+        .upper-nav .login ul li .btn-login i {
+          font-size: 14px;
+          color: #1c75bc;
+          margin-left: 5px; }
+      .upper-nav .login ul li .btn-rigister {
+        border: 2px solid #1c75bc;
+        color: #1c75bc; }
+        .upper-nav .login ul li .btn-rigister i {
+          font-size: 14px;
+          color: #1c75bc;
+          margin-left: 5px; }
+      .upper-nav .login ul li .btn-add-ads {
+        background-color: #1c75bc;
+        border: 1px solid #1c75bc;
+        color: #fff; }
+    .upper-nav .login ul li:last-child {
+      border-right: 1px solid #ddd; }
+
+.header-img {
+  margin-top: 50px;
+  background-image: url("../images/header.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.search-bar {
+  position: absolute;
+  top: -10%;
+  width: 100%; }
+  .search-bar form {
+    background-color: #1c75bc;
+    padding: 20px;
+    border-radius: 8px; }
+    .search-bar form input,
+    .search-bar form select {
+      width: 23% !important;
+      padding: 12px;
+      border: 0;
+      border: 1px solid #ddd;
+      border-radius: 5px; }
+    .search-bar form select {
+      background-color: #fff;
+      color: #666 !important;
+      padding: 5px !important; }
+    .search-bar form input:first-child {
+      width: 30%; }
+    .search-bar form button {
+      margin-top: -5px; }
+
+.ads {
+  margin-top: 20px; }
+  .ads .border-col {
+    border: 1px solid #ddd;
+    padding: 0; }
+  .ads .head {
+    text-align: right;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    padding: 10px; }
+  .ads .card {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px; }
+    .ads .card img {
+      transition: all 0.5s ease-in-out; }
+      .ads .card img:hover {
+        filter: grayscale(100%); }
+    .ads .card .card-body {
+      padding: 0 !important; }
+    .ads .card .card-title {
+      margin: 0;
+      padding: 10px 15px 0 0;
+      margin-bottom: 5px;
+      font-size: 17px; }
+    .ads .card span {
+      padding: 0 15px 0 0;
+      font-size: 10px;
+      color: #333;
+      margin-left: 15px; }
+      .ads .card span i {
+        margin-left: 4px; }
+    .ads .card .name {
+      padding: 0 15px 0 0;
+      color: #1c75bc; }
+    .ads .card .key-words {
+      padding: 10px 15px 10px 0;
+      margin-top: 10px;
+      background-color: #ddd; }
+      .ads .card .key-words span:first-child {
+        padding-right: 0 !important;
+        font-size: 15px; }
+      .ads .card .key-words .last {
+        font-size: 15px;
+        color: #1c75bc;
+        font-weight: bold;
+        position: absolute;
+        left: 2%; }
+  .ads .swiper-container {
+    padding-bottom: 40px !important; }
+    .ads .swiper-container .swiper-pagination {
+      bottom: -40px !important;
+      height: 60px; }
+
+.cards {
+  background-color: #f7f7f7;
+  padding: 20px 20px 50px 20px; }
+  .cards .card {
+    margin-top: 10px;
+    border: 1px solid #777;
+    padding: 20px;
+    height: 150px; }
+    .cards .card img {
+      width: 45%;
+      margin: auto;
+      color: #555;
+      font-size: 30px;
+      margin-top: 20px; }
+    .cards .card p {
+      margin-top: 20px; }
+
+.ads-now-car-model .ads-now {
+  border: 1px solid #ddd; }
+  .ads-now-car-model .ads-now .head {
+    text-align: right;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    padding: 10px; }
+  .ads-now-car-model .ads-now .card {
+    background-color: #f6f8fa; }
+    .ads-now-car-model .ads-now .card img {
+      transition: all 0.5s ease; }
+      .ads-now-car-model .ads-now .card img:hover {
+        filter: grayscale(100%); }
+    .ads-now-car-model .ads-now .card .card-title {
+      font-size: 18px;
+      padding: 20px 20px 0 0; }
+    .ads-now-car-model .ads-now .card span {
+      display: inline-block;
+      margin-left: 25px;
+      padding: 20px 20px 0 0;
+      color: #666; }
+      .ads-now-car-model .ads-now .card span i {
+        margin-left: 5px; }
+    .ads-now-car-model .ads-now .card .card-body {
+      padding: 0; }
+  .ads-now-car-model .ads-now .name {
+    color: #1c75bc;
+    padding: 5px 20px 0 0; }
+  .ads-now-car-model .ads-now .key-words {
+    background-color: #ddd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px !important; }
+    .ads-now-car-model .ads-now .key-words span {
+      padding-top: 0 !important;
+      margin: 0; }
+    .ads-now-car-model .ads-now .key-words .last {
+      position: absolute;
+      left: 2%;
+      color: #1c75bc;
+      font-weight: bold; }
+  .ads-now-car-model .ads-now .card-grow .last {
+    color: #1c75bc;
+    font-weight: bold; }
+  .ads-now-car-model .ads-now .btn-add-more {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px; }
+.ads-now-car-model .car-model {
+  border: 1px solid #ddd; }
+  .ads-now-car-model .car-model .head {
+    text-align: right;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    padding: 10px; }
+  .ads-now-car-model .car-model .car-model-img img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border: 1px solid #ddd; }
+.ads-now-car-model .ads-space {
+  margin-top: 60px;
+  background-color: #ddd;
+  height: 200px;
+  position: relative; }
+  .ads-now-car-model .ads-space h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+footer {
+  background-color: #1c75bc; }
+  footer .logo-content-logo {
+    padding-right: 10px; }
+  footer .logo {
+    padding-bottom: 10px;
+    text-align: right;
+    position: relative;
+    color: #fff; }
+    footer .logo .logo-content {
+      text-align: right; }
+      footer .logo .logo-content p {
+        position: absolute;
+        right: 10%;
+        bottom: -1%;
+        margin: 0; }
+  footer .help-content {
+    padding-right: 90px;
+    padding-top: 10px; }
+    footer .help-content ul {
+      list-style-type: square; }
+      footer .help-content ul li {
+        margin-top: 5px; }
+  footer .social-content {
+    padding-right: 90px;
+    padding-top: 10px; }
+    footer .social-content .social i {
+      display: inline-block;
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      margin-right: 15px;
+      transition: all 0.5s ease; }
+      footer .social-content .social i:hover {
+        color: #073670; }
+    footer .social-content input {
+      padding: 15px;
+      background-color: #fff;
+      border: 0;
+      color: #444 !important;
+      text-align: center; }
+      footer .social-content input::placeholder {
+        color: #444;
+        opacity: 1;
+        /* Firefox */ }
+    footer .social-content button {
+      border: 0 !important;
+      border: 1px solid #073670;
+      background-color: #073670;
+      padding: 15px;
+      width: 70%;
+      margin-top: 10px;
+      color: #fff;
+      margin-bottom: 10px;
+      transition: all 0.5s ease-in-out; }
+      footer .social-content button:hover {
+        background-color: #06162a; }
+  footer .copy {
+    background-color: #256caf;
+    padding: 20px;
+    position: relative; }
+    footer .copy h5 {
+      margin: 0;
+      font-size: 15px;
+      color: #fff;
+      margin-top: 20px;
+      float: right; }
+    footer .copy .logo-funun {
+      width: 50%;
+      float: left; }
+      footer .copy .logo-funun img {
+        width: 20%; }
+
+@media (max-width: 1024px) {
+  .search-bar {
+    top: -6% !important; }
+    .search-bar form input,
+    .search-bar form select {
+      width: 22% !important;
+      font-size: 15px; }
+
+  .car-model .car-model-img img {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 3px !important; }
+
+  footer .social-content input {
+    width: 73% !important; } }
+@media (max-width: 800px) {
+  .top-header .info span:last-child {
+    padding: 0 !important; }
+  .top-header .social {
+    text-align: right !important;
+    margin-top: 5px; }
+
+  .login {
+    padding: 0 !important; }
+    .login ul {
+      padding: 0 !important;
+      padding-right: 0 !important; }
+
+  .cards .card p {
+    margin: 0 !important; }
+
+  .car-model .car-model-img img {
+    width: 13% !important;
+    height: 86px !important;
+    margin: 2px !important; }
+
+  footer .logo-content-logo {
+    padding-right: 0px !important; }
+  footer .help-content,
+  footer .social-content {
+    padding-right: 0 !important; }
+  footer .logo-funun {
+    width: 65% !important;
+    float: left; }
+    footer .logo-funun img {
+      width: 20%; } }
+@media (max-width: 524px) {
+  .top-header .info span:last-child {
+    padding: 0 !important; }
+  .top-header .social {
+    text-align: right !important;
+    margin-top: 5px; }
+
+  .login {
+    padding: 0 !important; }
+    .login ul {
+      padding: 0 !important;
+      padding-right: 0 !important; }
+
+  .search-bar form input,
+  .search-bar form select {
+    width: 100% !important;
+    margin-top: 5px;
+    font-size: 15px; }
+  .search-bar form button {
+    width: 100% !important;
+    margin-top: 5px;
+    font-size: 15px; }
+
+  .cards .card img {
+    margin-top: 0 !important;
+    margin-top: -10px !important; }
+  .cards .card p {
+    margin: 0 !important; }
+
+  .car-model .car-model-img img {
+    width: 17% !important;
+    height: 61px !important;
+    margin: 2px !important; }
+
+  footer .help-content,
+  footer .social-content {
+    padding-right: 0 !important; }
+  footer .copy .logo-funun {
+    width: 100% !important;
+    text-align: right; }
+    footer .copy .logo-funun img {
+      width: 40% !important;
+      margin-top: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
