@@ -130,6 +130,11 @@ body {
       padding: 10px 15px 0 0;
       margin-bottom: 5px;
       font-size: 17px; }
+      .ads .card .card-title a {
+        color: #000 !important;
+        text-decoration: none; }
+        .ads .card .card-title a:hover {
+          color: #1c75bc !important; }
     .ads .card span {
       padding: 0 15px 0 0;
       font-size: 10px;
@@ -166,7 +171,9 @@ body {
     margin-top: 10px;
     border: 1px solid #777;
     padding: 20px;
-    height: 150px; }
+    height: 150px;
+    transition: all 4s ease;
+    text-decoration: none !important; }
     .cards .card img {
       width: 45%;
       margin: auto;
@@ -175,6 +182,12 @@ body {
       margin-top: 20px; }
     .cards .card p {
       margin-top: 20px; }
+    .cards .card:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      background-color: #1c75bc;
+      border: 1px solid #1c75bc; }
+      .cards .card:hover p {
+        color: #fff !important; }
 
 .ads-now-car-model .ads-now {
   border: 1px solid #ddd; }
@@ -192,7 +205,13 @@ body {
         filter: grayscale(100%); }
     .ads-now-car-model .ads-now .card .card-title {
       font-size: 18px;
-      padding: 20px 20px 0 0; }
+      padding: 20px 20px 0 0;
+      color: #000 !important; }
+      .ads-now-car-model .ads-now .card .card-title a {
+        color: #000 !important;
+        text-decoration: none; }
+        .ads-now-car-model .ads-now .card .card-title a:hover {
+          color: #1c75bc !important; }
     .ads-now-car-model .ads-now .card span {
       display: inline-block;
       margin-left: 25px;
@@ -256,6 +275,11 @@ body {
   text-align: right;
   background-color: #ddd;
   padding: 20px; }
+  .path a {
+    text-decoration: none;
+    color: #000; }
+    .path a:hover {
+      color: #1c75bc; }
   .path i {
     font-size: 13px; }
 
@@ -370,6 +394,11 @@ body {
     .ads-now .card .card-title {
       font-size: 18px;
       padding: 5px 15px 0 0 !important; }
+      .ads-now .card .card-title a {
+        color: #000 !important;
+        text-decoration: none; }
+        .ads-now .card .card-title a:hover {
+          color: #1c75bc !important; }
     .ads-now .card span {
       display: inline-block;
       margin-left: 25px;
@@ -402,7 +431,12 @@ body {
   .ads-now .btn-add-more {
     width: 100%;
     border: 1px solid #ddd;
-    padding: 10px; }
+    padding: 10px;
+    transition: all .5s ease; }
+    .ads-now .btn-add-more:hover {
+      background-color: #ecb000;
+      border: 1px solid #ecb000;
+      color: #fff; }
 
 .show-ads .ads-info .swiper-container {
   width: 100%;
@@ -520,6 +554,8 @@ body {
     .show-ads .ads-info .social-media span i {
       color: #888;
       font-size: 30px; }
+      .show-ads .ads-info .social-media span i:hover {
+        color: #1c75bc; }
 .show-ads .ads-info form {
   margin-top: 50px; }
   .show-ads .ads-info form input {
@@ -547,6 +583,11 @@ body {
   .show-ads .related-ads .card .card-title {
     font-size: 18px;
     padding: 20px 20px 0 0; }
+    .show-ads .related-ads .card .card-title a {
+      color: #000 !important;
+      text-decoration: none; }
+      .show-ads .related-ads .card .card-title a:hover {
+        color: #1c75bc !important; }
   .show-ads .related-ads .card span {
     display: inline-block;
     margin-left: 15px;

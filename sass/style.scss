@@ -179,6 +179,13 @@ body {
       padding: 10px 15px 0 0;
       margin-bottom: 5px;
       font-size: 17px;
+      a{
+        color: #000 !important;
+        text-decoration: none;
+        &:hover{
+          color: $mainColor !important;
+        }
+      }
     }
     span {
       padding: 0 15px 0 0;
@@ -228,6 +235,8 @@ body {
     border: 1px solid #777;
     padding: 20px;
     height: 150px;
+    transition: all 4s ease;
+    text-decoration: none !important;
     img {
       width: 45%;
       margin: auto;
@@ -237,6 +246,14 @@ body {
     }
     p {
       margin-top: 20px;
+    }
+    &:hover{
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      p{
+        color: #fff !important;
+      }
     }
   }
 }
@@ -263,6 +280,14 @@ body {
       .card-title {
         font-size: 18px;
         padding: 20px 20px 0 0;
+        color: #000 !important;
+        a{
+          color: #000 !important;
+          text-decoration: none;
+          &:hover{
+            color: $mainColor !important;
+          }
+        }
       }
       span {
         display: inline-block;
@@ -357,6 +382,13 @@ body {
   text-align: right;
   background-color: #ddd;
   padding: 20px;
+  a{
+    text-decoration: none;
+    color: #000;
+    &:hover{
+      color: $mainColor;
+    }
+  }
   i {
     font-size: 13px;
   }
@@ -511,6 +543,13 @@ body {
     .card-title {
       font-size: 18px;
       padding: 5px 15px 0 0 !important;
+      a{
+        color: #000 !important;
+        text-decoration: none;
+        &:hover{
+          color: $mainColor !important;
+        }
+      }
     }
     span {
       display: inline-block;
@@ -556,6 +595,12 @@ body {
     width: 100%;
     border: 1px solid #ddd;
     padding: 10px;
+    transition: all .5s ease;
+    &:hover{
+      background-color: #ecb000;
+      border: 1px solid #ecb000;
+      color: #fff;
+    }
   }
 }
 
@@ -714,6 +759,9 @@ body {
         i {
           color: #888;
           font-size: 30px;
+          &:hover{
+            color: $mainColor;
+          }
         }
       }
     }
@@ -753,6 +801,13 @@ body {
       .card-title {
         font-size: 18px;
         padding: 20px 20px 0 0;
+        a{
+          color: #000 !important;
+          text-decoration: none;
+          &:hover{
+            color: $mainColor !important;
+          }
+        }
       }
       span {
         display: inline-block;
