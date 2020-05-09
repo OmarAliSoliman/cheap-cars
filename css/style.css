@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Changa&display=swap";
 body {
   direction: rtl;
-  font-family: 'Changa', sans-serif; }
+  font-family: "Changa", sans-serif; }
 
 .clear {
   clear: both; }
@@ -50,10 +50,17 @@ body {
           font-size: 14px;
           color: #1c75bc;
           margin-left: 5px; }
+        .upper-nav .login ul li .btn-rigister:hover {
+          background-color: #1c75bc;
+          color: #fff; }
       .upper-nav .login ul li .btn-add-ads {
         background-color: #1c75bc;
         border: 1px solid #1c75bc;
         color: #fff; }
+        .upper-nav .login ul li .btn-add-ads:hover {
+          background-color: #fff;
+          border: 2px solid #1c75bc;
+          color: #1c75bc; }
     .upper-nav .login ul li:last-child {
       border-right: 1px solid #ddd; }
 
@@ -73,6 +80,11 @@ body {
     background-color: #1c75bc;
     padding: 20px;
     border-radius: 8px; }
+    .search-bar form img {
+      position: absolute;
+      top: 33.2%;
+      margin-right: 5px;
+      width: 2.5%; }
     .search-bar form input,
     .search-bar form select {
       width: 23% !important;
@@ -83,11 +95,15 @@ body {
     .search-bar form select {
       background-color: #fff;
       color: #666 !important;
-      padding: 5px !important; }
+      padding: 5px !important;
+      font-size: 15px;
+      padding-right: 30px !important; }
     .search-bar form input:first-child {
       width: 30%; }
     .search-bar form button {
-      margin-top: -5px; }
+      margin-top: -3px;
+      height: 43px;
+      width: 55px; }
 
 .ads {
   margin-top: 20px; }
@@ -170,7 +186,8 @@ body {
   .ads-now-car-model .ads-now .card {
     background-color: #f6f8fa; }
     .ads-now-car-model .ads-now .card img {
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      height: 100%; }
       .ads-now-car-model .ads-now .card img:hover {
         filter: grayscale(100%); }
     .ads-now-car-model .ads-now .card .card-title {
@@ -190,7 +207,7 @@ body {
     padding: 5px 20px 0 0; }
   .ads-now-car-model .ads-now .key-words {
     background-color: #ddd;
-    position: absolute;
+    position: inherit;
     bottom: 0;
     width: 100%;
     padding: 10px !important; }
@@ -224,13 +241,342 @@ body {
 .ads-now-car-model .ads-space {
   margin-top: 60px;
   background-color: #ddd;
-  height: 200px;
+  height: 350px;
   position: relative; }
   .ads-now-car-model .ads-space h6 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.ads-and-search .ads-now .card img {
+  height: 100% !important; }
+
+.path {
+  text-align: right;
+  background-color: #ddd;
+  padding: 20px; }
+  .path i {
+    font-size: 13px; }
+
+.login-rigister form .form-input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  border: 1px solid #ddd; }
+.login-rigister form .remember {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+.login-rigister form .btn {
+  color: #fff; }
+.login-rigister form .btn-login {
+  background-color: #1c75bc;
+  border: 1px solid #1c75bc; }
+.login-rigister form .btn-rigister {
+  background-color: #ecb000;
+  border: 1px solid #ecb000; }
+
+.contact .contact-info i {
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #ecb000;
+  border: 1px solid #ecb000;
+  color: #fff;
+  border-radius: 5px; }
+.contact .contact-info span {
+  font-weight: bold; }
+.contact .contact-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ddd; }
+.contact .contact-form textarea {
+  width: 100% !important;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ddd;
+  padding: 10px; }
+.contact .contact-form button {
+  background-color: #1c75bc;
+  border: 1px solid #1c75bc; }
+
+#btnclose {
+  background-color: #ddd;
+  width: 100% !important;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 1s ease-in-out; }
+
+.search {
+  border: 1px solid #ddd; }
+  .search h6 {
+    border: 1px solid #eee;
+    background-color: #ddd;
+    padding: 10px; }
+  .search form {
+    padding: 10px; }
+  .search input {
+    border-radius: 5px;
+    border: 0;
+    border: 1px solid #ddd;
+    padding: 7px; }
+  .search .search-all {
+    width: 100%;
+    margin-bottom: 5px; }
+  .search .country,
+  .search .city {
+    width: 50%;
+    float: right; }
+    .search .country select,
+    .search .city select {
+      width: 90%;
+      border: 0;
+      background-color: transparent;
+      border: 1px solid #ddd;
+      padding: 7px;
+      border-radius: 5px; }
+  .search .price input {
+    width: 45%;
+    margin: 4px;
+    float: right; }
+  .search .btn {
+    background-color: #51b224;
+    border: 1px solid #51b224;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.5s linear; }
+    .search .btn:hover {
+      background-color: #1c75bc;
+      border: 1px solid #1c75bc; }
+
+.ads-now {
+  border: 1px solid #ddd; }
+  .ads-now .head {
+    text-align: right;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    padding: 10px; }
+  .ads-now .card {
+    background-color: #f6f8fa; }
+    .ads-now .card img {
+      transition: all 0.5s ease; }
+      .ads-now .card img:hover {
+        filter: grayscale(100%); }
+    .ads-now .card .card-title {
+      font-size: 18px;
+      padding: 5px 15px 0 0 !important; }
+    .ads-now .card span {
+      display: inline-block;
+      margin-left: 25px;
+      padding: 10px 20px 0 0 !important;
+      color: #666; }
+      .ads-now .card span i {
+        margin-left: 5px; }
+    .ads-now .card .card-body {
+      padding: 0; }
+  .ads-now .name {
+    color: #1c75bc;
+    padding: 5px 20px 0 0; }
+  .ads-now .key-words {
+    background-color: #ddd;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    padding: 10px !important; }
+    .ads-now .key-words span {
+      padding-top: 0 !important;
+      margin: 0; }
+    .ads-now .key-words .last {
+      position: absolute;
+      left: 2%;
+      color: #1c75bc;
+      font-weight: bold; }
+  .ads-now .card-grow .last {
+    color: #1c75bc;
+    font-weight: bold; }
+  .ads-now .btn-add-more {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px; }
+
+.show-ads .ads-info .swiper-container {
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .show-ads .ads-info .swiper-container .special-ads {
+    z-index: 3;
+    display: inline-block;
+    position: absolute;
+    background-color: #68bb2b;
+    border: 1px solid #68bb2b;
+    width: 15%;
+    padding: 10px !important;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    left: 3%;
+    top: 2%; }
+.show-ads .ads-info .swiper-slider .swiper-slide {
+  background-size: cover;
+  background-position: center; }
+.show-ads .ads-info .swiper-slider .gallery-top {
+  height: 80%;
+  width: 100%; }
+.show-ads .ads-info .swiper-slider .gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0; }
+.show-ads .ads-info .swiper-slider .gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.4; }
+.show-ads .ads-info .swiper-slider .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1; }
+.show-ads .ads-info .swiper-slider .swiper-wrapper .image-top {
+  height: 70vh; }
+.show-ads .ads-info .swiper-slider .swiper-wrapper .image-down {
+  height: 20vh; }
+.show-ads .ads-info .ads-header .header {
+  margin-top: 15px;
+  font-size: 20px;
+  float: right; }
+.show-ads .ads-info .ads-header .price {
+  color: #fff;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  float: left;
+  border: 1px solid #ecb000;
+  background-color: #ecb000; }
+.show-ads .ads-info .table-infor {
+  margin-top: -10px !important;
+  border: 1px solid #ddd; }
+  .show-ads .ads-info .table-infor .table {
+    margin-bottom: 0 !important; }
+  .show-ads .ads-info .table-infor td {
+    padding-right: 40px !important; }
+  .show-ads .ads-info .table-infor h6 {
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin: 10px 0px 20px 0px; }
+    .show-ads .ads-info .table-infor h6 i {
+      color: #1c75bc;
+      font-size: 25px; }
+  .show-ads .ads-info .table-infor .table-word {
+    margin: 0 !important;
+    padding: 0 !important; }
+.show-ads .ads-info .descr {
+  border: 1px solid #ddd; }
+  .show-ads .ads-info .descr h6 {
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin: 10px 0px 20px 0px; }
+    .show-ads .ads-info .descr h6 i {
+      color: #1c75bc;
+      font-size: 25px; }
+  .show-ads .ads-info .descr .desr-par {
+    line-height: 25px;
+    color: #444; }
+.show-ads .ads-info .contact-data {
+  border: 1px solid #ddd; }
+  .show-ads .ads-info .contact-data h6 {
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin: 10px 0px 20px 0px; }
+    .show-ads .ads-info .contact-data h6 i {
+      color: #1c75bc;
+      font-size: 25px; }
+  .show-ads .ads-info .contact-data ul {
+    padding: 0;
+    padding-right: 20px; }
+    .show-ads .ads-info .contact-data ul li {
+      display: inline-block;
+      margin-left: 20px; }
+      .show-ads .ads-info .contact-data ul li i {
+        font-size: 20px;
+        margin-left: 10px;
+        color: #444; }
+      .show-ads .ads-info .contact-data ul li span {
+        font-size: 20px;
+        color: #444; }
+.show-ads .ads-info .social-media {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px; }
+  .show-ads .ads-info .social-media span {
+    margin-top: 35px;
+    display: inline-block;
+    width: 15%; }
+    .show-ads .ads-info .social-media span i {
+      color: #888;
+      font-size: 30px; }
+.show-ads .ads-info form {
+  margin-top: 50px; }
+  .show-ads .ads-info form input {
+    border: 0;
+    border: 1px solid #ddd;
+    padding: 10px; }
+  .show-ads .ads-info form button {
+    padding: 10px;
+    background-color: #1c75bc;
+    border: 0;
+    border: 1px solid #1c75bc;
+    color: #fff; }
+.show-ads .related-ads h6 {
+  margin-top: 15px;
+  font-size: 25px; }
+  .show-ads .related-ads h6 i {
+    color: #1c75bc;
+    font-size: 25px; }
+.show-ads .related-ads .card {
+  background-color: #f6f8fa; }
+  .show-ads .related-ads .card img {
+    transition: all 0.5s ease; }
+    .show-ads .related-ads .card img:hover {
+      filter: grayscale(100%); }
+  .show-ads .related-ads .card .card-title {
+    font-size: 18px;
+    padding: 20px 20px 0 0; }
+  .show-ads .related-ads .card span {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 0px 20px 10px 0;
+    color: #666;
+    font-size: 14px; }
+    .show-ads .related-ads .card span i {
+      margin-left: 5px; }
+  .show-ads .related-ads .card .card-body {
+    padding: 0; }
+  .show-ads .related-ads .card .key-words {
+    background-color: #ddd;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    padding: 10px !important; }
+    .show-ads .related-ads .card .key-words span {
+      padding-top: 0 !important;
+      margin: 0;
+      padding-right: 0 !important;
+      font-size: 12px;
+      text-align: right; }
+    .show-ads .related-ads .card .key-words .last {
+      position: absolute;
+      left: 0%;
+      color: #1c75bc;
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 5px;
+      padding-top: 3px !important; }
 
 footer {
   background-color: #1c75bc; }
@@ -271,6 +617,7 @@ footer {
       padding: 15px;
       background-color: #fff;
       border: 0;
+      width: 80%;
       color: #444 !important;
       text-align: center; }
       footer .social-content input::placeholder {
@@ -282,7 +629,7 @@ footer {
       border: 1px solid #073670;
       background-color: #073670;
       padding: 15px;
-      width: 70%;
+      width: 80%;
       margin-top: 10px;
       color: #fff;
       margin-bottom: 10px;
@@ -318,8 +665,11 @@ footer {
     height: 60px !important;
     margin: 3px !important; }
 
+  .ads-now .key-words {
+    position: inherit !important; }
+
   footer .social-content input {
-    width: 73% !important; } }
+    width: 80%; } }
 @media (max-width: 800px) {
   .top-header .info span:last-child {
     padding: 0 !important; }
@@ -341,8 +691,13 @@ footer {
     height: 86px !important;
     margin: 2px !important; }
 
+  .ads-now .key-words {
+    position: inherit !important; }
+
   footer .logo-content-logo {
     padding-right: 0px !important; }
+  footer input {
+    width: 80% !important; }
   footer .help-content,
   footer .social-content {
     padding-right: 0 !important; }
@@ -364,6 +719,18 @@ footer {
       padding: 0 !important;
       padding-right: 0 !important; }
 
+  .search-bar form .all-mark {
+    top: 30.2%;
+    margin-right: 4px;
+    width: 6.5%; }
+  .search-bar form .car-select {
+    top: 46.2%;
+    margin-right: 4px;
+    width: 7.5%; }
+  .search-bar form .place {
+    top: 63.2%;
+    margin-right: 4px;
+    width: 7.5%; }
   .search-bar form input,
   .search-bar form select {
     width: 100% !important;
@@ -388,6 +755,8 @@ footer {
   footer .help-content,
   footer .social-content {
     padding-right: 0 !important; }
+  footer input {
+    width: 80% !important; }
   footer .copy .logo-funun {
     width: 100% !important;
     text-align: right; }
