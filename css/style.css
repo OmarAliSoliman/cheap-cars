@@ -492,14 +492,22 @@ body {
 .show-ads .ads-info .table-infor {
   margin-top: -10px !important;
   border: 1px solid #ddd; }
+  .show-ads .ads-info .table-infor .table-head {
+    color: #1c75bc; }
   .show-ads .ads-info .table-infor .table {
     margin-bottom: 0 !important; }
   .show-ads .ads-info .table-infor td {
     padding-right: 40px !important; }
+    .show-ads .ads-info .table-infor td .question {
+      font-size: 15px; }
+    .show-ads .ads-info .table-infor td .answer {
+      color: #888;
+      font-size: 14px; }
   .show-ads .ads-info .table-infor h6 {
     font-size: 25px;
     padding-right: 20px;
     padding-top: 10px;
+    color: #1c75bc;
     margin: 10px 0px 20px 0px; }
     .show-ads .ads-info .table-infor h6 i {
       color: #1c75bc;
@@ -511,6 +519,7 @@ body {
   border: 1px solid #ddd; }
   .show-ads .ads-info .descr h6 {
     font-size: 25px;
+    color: #1c75bc;
     padding-right: 20px;
     padding-top: 10px;
     margin: 10px 0px 20px 0px; }
@@ -524,6 +533,7 @@ body {
   border: 1px solid #ddd; }
   .show-ads .ads-info .contact-data h6 {
     font-size: 25px;
+    color: #1c75bc;
     padding-right: 20px;
     padding-top: 10px;
     margin: 10px 0px 20px 0px; }
@@ -556,21 +566,78 @@ body {
       font-size: 30px; }
       .show-ads .ads-info .social-media span i:hover {
         color: #1c75bc; }
-.show-ads .ads-info form {
-  margin-top: 50px; }
-  .show-ads .ads-info form input {
-    border: 0;
-    border: 1px solid #ddd;
-    padding: 10px; }
-  .show-ads .ads-info form button {
+.show-ads .ads-info .comments h6 {
+  font-size: 25px;
+  padding-right: 20px;
+  color: #1c75bc;
+  padding-top: 10px;
+  margin: 10px 0px 20px 0px;
+  position: relative; }
+  .show-ads .ads-info .comments h6 i {
+    color: #1c75bc;
+    font-size: 25px; }
+.show-ads .ads-info .comments .on-comment {
+  border: 1px solid #EEE;
+  position: relative;
+  padding: 15px;
+  padding-right: 15px;
+  padding-bottom: 2px !important; }
+  .show-ads .ads-info .comments .on-comment .com-name {
+    font-size: 15px;
+    font-weight: bold; }
+  .show-ads .ads-info .comments .on-comment .com-word {
+    font-size: 14px;
+    color: #888; }
+  .show-ads .ads-info .comments .on-comment .time {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    font-size: 10px;
+    color: #444; }
+.show-ads .ads-info .add-comment {
+  position: relative;
+  margin-top: 40px;
+  padding-top: 30px;
+  margin-bottom: 20px; }
+  .show-ads .ads-info .add-comment::before {
+    position: absolute;
+    content: "";
+    top: -1%;
+    width: 100%;
+    height: 2px;
+    background-color: #EEE; }
+  .show-ads .ads-info .add-comment .head-comment-add {
+    color: #1c75bc;
+    width: 15%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    top: -5%;
+    left: 45%;
+    text-align: center;
+    font-size: 15px; }
+  .show-ads .ads-info .add-comment form input {
+    width: 100%;
     padding: 10px;
-    background-color: #1c75bc;
-    border: 0;
-    border: 1px solid #1c75bc;
-    color: #fff; }
+    border: 1px solid #EEE; }
+    .show-ads .ads-info .add-comment form input::placeholder {
+      font-size: 13px; }
+  .show-ads .ads-info .add-comment form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #EEE; }
+    .show-ads .ads-info .add-comment form textarea::placeholder {
+      font-size: 13px; }
+  .show-ads .ads-info .add-comment form button {
+    border: 1px solid #ecb000;
+    background-color: #ecb000;
+    color: #fff;
+    padding: 10px; }
 .show-ads .related-ads h6 {
   margin-top: 15px;
-  font-size: 25px; }
+  font-size: 25px;
+  color: #1c75bc; }
   .show-ads .related-ads h6 i {
     color: #1c75bc;
     font-size: 25px; }
@@ -803,6 +870,20 @@ footer {
     text-align: right; }
     footer .copy .logo-funun img {
       width: 40% !important;
-      margin-top: 15px; } }
+      margin-top: 15px; }
+
+  .show-ads .ads-info .ads-header .price {
+    float: right;
+    width: 50% !important;
+    margin-top: 10px; }
+
+  .show-ads .ads-info .table-infor td {
+    padding-right: 0 !important; }
+
+  .show-ads .ads-info .add-comment .head-comment-add {
+    width: 25% !important; } }
+@media (max-width: 320px) {
+  .show-ads .ads-info .table-infor td {
+    padding-right: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

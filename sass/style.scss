@@ -678,6 +678,9 @@ body {
       }
     }
     .table-infor {
+      .table-head{
+        color: $mainColor;
+      }
       .table {
         margin-bottom: 0 !important;
       }
@@ -685,11 +688,19 @@ body {
       border: 1px solid #ddd;
       td {
         padding-right: 40px !important;
+        .question{
+          font-size: 15px;
+        }
+        .answer{
+          color: #888;
+          font-size: 14px;
+        }
       }
       h6 {
         font-size: 25px;
         padding-right: 20px;
         padding-top: 10px;
+        color: $mainColor;
         margin: 10px 0px 20px 0px;
         i {
           color: $mainColor;
@@ -705,6 +716,7 @@ body {
       border: 1px solid #ddd;
       h6 {
         font-size: 25px;
+        color: $mainColor;
         padding-right: 20px;
         padding-top: 10px;
         margin: 10px 0px 20px 0px;
@@ -722,6 +734,7 @@ body {
       border: 1px solid #ddd;
       h6 {
         font-size: 25px;
+        color: $mainColor;
         padding-right: 20px;
         padding-top: 10px;
         margin: 10px 0px 20px 0px;
@@ -765,19 +778,92 @@ body {
         }
       }
     }
-    form {
-      margin-top: 50px;
-      input {
-        border: 0;
-        border: 1px solid #ddd;
-        padding: 10px;
+    .comments{
+      h6 {
+        font-size: 25px;
+        padding-right: 20px;
+        color: $mainColor;
+        padding-top: 10px;
+        margin: 10px 0px 20px 0px;
+        position: relative;
+        i {
+          color: $mainColor;
+          font-size: 25px;
+        }
       }
-      button {
-        padding: 10px;
-        background-color: $mainColor;
-        border: 0;
-        border: 1px solid $mainColor;
-        color: #fff;
+      .on-comment{
+        border: 1px solid #EEE;
+        position: relative;
+        padding: 15px;
+        padding-right: 15px;
+        padding-bottom: 2px !important;
+        .com-name{
+          font-size: 15px;
+          font-weight: bold;
+        }
+        .com-word{
+          font-size: 14px;
+          color: #888;
+        }
+        .time{
+          position: absolute;
+          top: 10%;
+          left: 1%;
+          font-size: 10px;
+          color: #444;
+        }
+      }
+    }
+    .add-comment{
+      position: relative;
+      margin-top: 40px;
+      padding-top: 30px;
+      margin-bottom: 20px;
+      &::before{
+        position: absolute;
+        content: "";
+        top: -1%;
+        // z-index: -1;
+        width: 100%;
+        height: 2px;
+        background-color: #EEE;
+      }
+      .head-comment-add{
+        color: #1c75bc;
+        width: 15%;
+        // z-index: 2 !important;
+        background-color: #fff;
+        border: 1px solid #fff;
+        position: absolute;
+        top: -5%;
+        left: 45%;
+        text-align: center;
+        font-size: 15px;
+      }
+      form{
+        input{
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #EEE;
+          &::placeholder{
+            font-size: 13px;
+          }
+        }
+        textarea{
+          width: 100%;
+          padding: 10px;
+          margin-top: 10px;
+          border: 1px solid #EEE;
+          &::placeholder{
+            font-size: 13px;
+          }
+        }
+        button{
+          border: 1px solid #ecb000;
+          background-color: #ecb000;
+          color: #fff;
+          padding: 10px;
+        }
       }
     }
   }
@@ -785,6 +871,7 @@ body {
     h6 {
       margin-top: 15px;
       font-size: 25px;
+      color: $mainColor;
       i {
         color: $mainColor;
         font-size: 25px;
@@ -1130,5 +1217,22 @@ footer {
         }
       }
     }
+  }
+  .show-ads .ads-info .ads-header .price{
+    float: right;
+    width: 50% !important;
+    margin-top: 10px;
+  }
+  .show-ads .ads-info .table-infor td{
+    padding-right: 0 !important;
+  }
+  .show-ads .ads-info .add-comment .head-comment-add{
+    width: 25% !important;
+  }
+}
+
+@media(max-width: 320px){
+  .show-ads .ads-info .table-infor td{
+    padding-right: 0 !important;
   }
 }
