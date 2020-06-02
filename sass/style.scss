@@ -55,7 +55,7 @@ body {
     padding-top: 10px;
     ul {
       li {
-        padding: 15px;
+        padding: 10px;
         display: inline-block;
         .btn-login {
           color: #444;
@@ -92,6 +92,12 @@ body {
       }
       li:last-child {
         border-right: 1px solid #ddd;
+      }
+    }
+    .lang{
+      a{
+        color: #000;
+        text-decoration: none;
       }
     }
   }
@@ -179,10 +185,10 @@ body {
       padding: 10px 15px 0 0;
       margin-bottom: 5px;
       font-size: 17px;
-      a{
+      a {
         color: #000 !important;
         text-decoration: none;
-        &:hover{
+        &:hover {
           color: $mainColor !important;
         }
       }
@@ -247,11 +253,11 @@ body {
     p {
       margin-top: 20px;
     }
-    &:hover{
-      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
       background-color: $mainColor;
       border: 1px solid $mainColor;
-      p{
+      p {
         color: #fff !important;
       }
     }
@@ -281,10 +287,10 @@ body {
         font-size: 18px;
         padding: 20px 20px 0 0;
         color: #000 !important;
-        a{
+        a {
           color: #000 !important;
           text-decoration: none;
-          &:hover{
+          &:hover {
             color: $mainColor !important;
           }
         }
@@ -367,10 +373,10 @@ body {
   }
 }
 
-.ads-and-search{
-  .ads-now{
-    .card{
-      img{
+.ads-and-search {
+  .ads-now {
+    .card {
+      img {
         height: 100% !important;
       }
     }
@@ -382,10 +388,27 @@ body {
   text-align: right;
   background-color: #ddd;
   padding: 20px;
-  a{
+  span {
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      // position: absolute;
+      margin-left: 6px;
+      margin-right: 6px;
+      content: "\f104";
+      font-weight: 900;
+      font-size: 13px;
+    }
+  }
+  .first {
+    &::before {
+      content: "" !important;
+    }
+  }
+  a {
     text-decoration: none;
     color: #000;
-    &:hover{
+    font-size: 14px;
+    &:hover {
       color: $mainColor;
     }
   }
@@ -543,10 +566,10 @@ body {
     .card-title {
       font-size: 18px;
       padding: 5px 15px 0 0 !important;
-      a{
+      a {
         color: #000 !important;
         text-decoration: none;
-        &:hover{
+        &:hover {
           color: $mainColor !important;
         }
       }
@@ -595,8 +618,8 @@ body {
     width: 100%;
     border: 1px solid #ddd;
     padding: 10px;
-    transition: all .5s ease;
-    &:hover{
+    transition: all 0.5s ease;
+    &:hover {
       background-color: #ecb000;
       border: 1px solid #ecb000;
       color: #fff;
@@ -606,6 +629,15 @@ body {
 
 // start show ads
 .show-ads {
+  .arrow-left-h6 {
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0d9";
+      color: #2b79c3;
+      font-size: 25px;
+    }
+  }
   .ads-info {
     .swiper-container {
       width: 100%;
@@ -678,7 +710,7 @@ body {
       }
     }
     .table-infor {
-      .table-head{
+      .table-head {
         color: $mainColor;
       }
       .table {
@@ -688,10 +720,10 @@ body {
       border: 1px solid #ddd;
       td {
         padding-right: 40px !important;
-        .question{
+        .question {
           font-size: 15px;
         }
-        .answer{
+        .answer {
           color: #888;
           font-size: 14px;
         }
@@ -772,13 +804,13 @@ body {
         i {
           color: #888;
           font-size: 30px;
-          &:hover{
+          &:hover {
             color: $mainColor;
           }
         }
       }
     }
-    .comments{
+    .comments {
       h6 {
         font-size: 25px;
         padding-right: 20px;
@@ -791,21 +823,21 @@ body {
           font-size: 25px;
         }
       }
-      .on-comment{
-        border: 1px solid #EEE;
+      .on-comment {
+        border: 1px solid #eee;
         position: relative;
         padding: 15px;
         padding-right: 15px;
         padding-bottom: 2px !important;
-        .com-name{
+        .com-name {
           font-size: 15px;
           font-weight: bold;
         }
-        .com-word{
+        .com-word {
           font-size: 14px;
           color: #888;
         }
-        .time{
+        .time {
           position: absolute;
           top: 10%;
           left: 1%;
@@ -814,21 +846,21 @@ body {
         }
       }
     }
-    .add-comment{
+    .add-comment {
       position: relative;
       margin-top: 40px;
       padding-top: 30px;
       margin-bottom: 20px;
-      &::before{
+      &::before {
         position: absolute;
         content: "";
         top: -1%;
         // z-index: -1;
         width: 100%;
         height: 2px;
-        background-color: #EEE;
+        background-color: #eee;
       }
-      .head-comment-add{
+      .head-comment-add {
         color: #1c75bc;
         width: 15%;
         // z-index: 2 !important;
@@ -840,25 +872,25 @@ body {
         text-align: center;
         font-size: 15px;
       }
-      form{
-        input{
+      form {
+        input {
           width: 100%;
           padding: 10px;
-          border: 1px solid #EEE;
-          &::placeholder{
+          border: 1px solid #eee;
+          &::placeholder {
             font-size: 13px;
           }
         }
-        textarea{
+        textarea {
           width: 100%;
           padding: 10px;
           margin-top: 10px;
-          border: 1px solid #EEE;
-          &::placeholder{
+          border: 1px solid #eee;
+          &::placeholder {
             font-size: 13px;
           }
         }
-        button{
+        button {
           border: 1px solid #ecb000;
           background-color: #ecb000;
           color: #fff;
@@ -868,6 +900,15 @@ body {
     }
   }
   .related-ads {
+    .related-d-h6-before{
+      &::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f0d9";
+        color: #2b79c3;
+        font-size: 25px;
+      }
+    }
     h6 {
       margin-top: 15px;
       font-size: 25px;
@@ -888,10 +929,10 @@ body {
       .card-title {
         font-size: 18px;
         padding: 20px 20px 0 0;
-        a{
+        a {
           color: #000 !important;
           text-decoration: none;
-          &:hover{
+          &:hover {
             color: $mainColor !important;
           }
         }
@@ -935,6 +976,237 @@ body {
         }
       }
     }
+  }
+}
+
+// start anouther pages
+.my-profile {
+  form {
+    margin-top: 0 !important;
+  }
+  h5 {
+    text-align: right;
+    margin-top: 60px;
+    color: $mainColor;
+    font-weight: bold;
+  }
+}
+
+.add-ads-add {
+  margin-bottom: 80px;
+  form {
+    text-align: right;
+    margin-top: 60px;
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+    select {
+      background-color: transparent;
+      padding: 5px !important;
+      color: #444;
+      font-size: 14px;
+    }
+    input[type="file"] {
+      border: 0;
+      margin-top: 0;
+    }
+    .add-pic {
+      color: $mainColor;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    button[type="submit"] {
+      border: 1px solid $mainColor;
+      background-color: $mainColor;
+      color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+    }
+  }
+}
+
+// start my-ads
+.my-ads {
+  text-align: right;
+  margin-bottom: 150px;
+  .card {
+    border: 0;
+    margin-top: 50px !important;
+    .card-body {
+      background-color: #f7f6fa;
+      height: 100%;
+      padding: 0 !important;
+      position: relative;
+      h5 {
+        font-size: 18px;
+        color: #44474b;
+        padding: 20px;
+      }
+      span {
+        margin-left: 20px;
+        font-size: 13px;
+        color: $mainColor;
+        padding: 20px;
+        i {
+          font-size: 12px;
+          margin-left: 10px;
+          color: $mainColor;
+        }
+      }
+      .controls {
+        background-color: #efebf9;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        line-height: 60px;
+        padding-right: 20px;
+        .button-controls {
+          background-color: $mainColor;
+          border: 1px solid $mainColor;
+          color: #fff;
+        }
+        .price {
+          position: absolute;
+          left: 3%;
+          top: 0%;
+          line-height: 60px;
+          font-size: 16px;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}
+
+// start edit ads
+.edit-ads {
+  text-align: right;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  form {
+    input,
+    select {
+      height: calc(2.5em + 0.75rem + 2px);
+    }
+    label {
+      color: $mainColor;
+      font-weight: bold;
+    }
+    select {
+      font-size: 14px;
+    }
+    input {
+      font-size: 14px;
+    }
+    .file-upload {
+      label {
+        margin-bottom: 0 !important;
+      }
+    }
+    .img-from-file {
+      img {
+        width: 20%;
+      }
+    }
+    button {
+      color: #fff;
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      padding: 10px;
+    }
+  }
+}
+
+// start my-inbox
+.my-inbox {
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  .card {
+    margin-top: 20px;
+    .card-header {
+      background-color: $mainColor !important;
+      color: #fff;
+      font-size: 18px;
+    }
+    .card-body {
+      .card-title,
+      .card-text {
+        font-size: 15px;
+        i {
+          margin-left: 5px;
+          color: $mainColor;
+        }
+      }
+      .btn-danger {
+        font-size: 13px;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+// start blacklist
+.blacklist {
+  text-align: right;
+  margin-top: 90px;
+  margin-bottom: 180px;
+  h5 {
+    color: $mainColor;
+    font-size: 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+  form {
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    button {
+      margin-top: 15px;
+      width: 120px;
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      color: #fff;
+      padding: 10px;
+    }
+  }
+}
+
+// start who-us
+.who-us {
+  margin-top: 80px;
+  margin-bottom: 90px;
+  text-align: right;
+  .who-header {
+    color: $mainColor;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  p {
+    color: #777;
+    .big-word {
+      color: $mainColor;
+      font-size: 23px;
+      font-weight: bold;
+    }
+    line-height: 40px;
   }
 }
 
@@ -1113,7 +1385,7 @@ footer {
     .logo-content-logo {
       padding-right: 0px !important;
     }
-    input{
+    input {
       width: 80% !important;
     }
     .help-content,
@@ -1127,6 +1399,11 @@ footer {
         width: 20%;
       }
     }
+  }
+  .my-ads .card .card-body .controls {
+    position: inherit;
+    margin-top: 10px;
+    height: 90px;
   }
 }
 
@@ -1149,17 +1426,17 @@ footer {
   }
   .search-bar {
     form {
-      .all-mark{
+      .all-mark {
         top: 30.2%;
         margin-right: 4px;
         width: 6.5%;
       }
-      .car-select{
+      .car-select {
         top: 46.2%;
         margin-right: 4px;
         width: 7.5%;
       }
-      .place{
+      .place {
         top: 63.2%;
         margin-right: 4px;
         width: 7.5%;
@@ -1204,7 +1481,7 @@ footer {
       padding-right: 0 !important;
     }
 
-    input{
+    input {
       width: 80% !important;
     }
     .copy {
@@ -1218,21 +1495,34 @@ footer {
       }
     }
   }
-  .show-ads .ads-info .ads-header .price{
+  .show-ads .ads-info .ads-header .price {
     float: right;
     width: 50% !important;
     margin-top: 10px;
   }
-  .show-ads .ads-info .table-infor td{
+  .show-ads .ads-info .table-infor td {
     padding-right: 0 !important;
   }
-  .show-ads .ads-info .add-comment .head-comment-add{
+  .show-ads .ads-info .add-comment .head-comment-add {
     width: 25% !important;
+  }
+  .my-ads .card .card-body h5 {
+    padding-bottom: 5px !important;
+  }
+  .my-ads .card .card-body .controls {
+    position: inherit;
+    margin-top: 10px;
+    height: 90px;
+  }
+  .my-ads .card .card-body .controls .price {
+    position: absolute;
+    left: 72%;
+    top: 44%;
   }
 }
 
-@media(max-width: 320px){
-  .show-ads .ads-info .table-infor td{
+@media (max-width: 320px) {
+  .show-ads .ads-info .table-infor td {
     padding-right: 0 !important;
   }
 }

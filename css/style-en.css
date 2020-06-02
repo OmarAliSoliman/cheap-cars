@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Changa&display=swap";
 body {
-  direction: rtl;
+  direction: ltr;
   font-family: "Changa", sans-serif; }
 
 .clear {
@@ -12,16 +12,16 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ddd; }
   .top-header .info span:first-child {
-    padding: 10px 0px 10px 10px;
-    border-left: 1px solid #ddd; }
+    padding: 10px 10px 10px 0px;
+    border-right: 1px solid #ddd; }
   .top-header .info span:last-child {
-    padding: 10px 10px 10px 0px; }
+    padding: 10px 0px 10px 10px; }
   .top-header .info i {
     color: #1c75bc;
-    margin-left: 5px; }
+    margin-right: 5px; }
   .top-header .social i {
     color: #555;
-    margin-right: 5px;
+    margin-left: 5px;
     transition: all 0.5s ease; }
     .top-header .social i:hover {
       color: #1c75bc; }
@@ -42,14 +42,14 @@ body {
         .upper-nav .login ul li .btn-login i {
           font-size: 14px;
           color: #1c75bc;
-          margin-left: 5px; }
+          margin-right: 5px; }
       .upper-nav .login ul li .btn-rigister {
         border: 2px solid #1c75bc;
         color: #1c75bc; }
         .upper-nav .login ul li .btn-rigister i {
           font-size: 14px;
           color: #1c75bc;
-          margin-left: 5px; }
+          margin-right: 5px; }
         .upper-nav .login ul li .btn-rigister:hover {
           background-color: #1c75bc;
           color: #fff; }
@@ -62,7 +62,7 @@ body {
           border: 2px solid #1c75bc;
           color: #1c75bc; }
     .upper-nav .login ul li:last-child {
-      border-right: 1px solid #ddd; }
+      border-left: 1px solid #ddd; }
     .upper-nav .login .lang a {
       color: #000;
       text-decoration: none; }
@@ -86,7 +86,7 @@ body {
     .search-bar form img {
       position: absolute;
       top: 33.2%;
-      margin-right: 5px;
+      margin-left: 5px;
       width: 2.5%; }
     .search-bar form input,
     .search-bar form select {
@@ -100,7 +100,7 @@ body {
       color: #666 !important;
       padding: 5px !important;
       font-size: 15px;
-      padding-right: 30px !important; }
+      padding-left: 30px !important; }
     .search-bar form input:first-child {
       width: 30%; }
     .search-bar form button {
@@ -114,7 +114,7 @@ body {
     border: 1px solid #ddd;
     padding: 0; }
   .ads .head {
-    text-align: right;
+    text-align: left;
     border: 1px solid #eee;
     background-color: #ddd;
     padding: 10px; }
@@ -130,7 +130,7 @@ body {
       padding: 0 !important; }
     .ads .card .card-title {
       margin: 0;
-      padding: 10px 15px 0 0;
+      padding: 10px 0 0 15px;
       margin-bottom: 5px;
       font-size: 17px; }
       .ads .card .card-title a {
@@ -139,28 +139,28 @@ body {
         .ads .card .card-title a:hover {
           color: #1c75bc !important; }
     .ads .card span {
-      padding: 0 15px 0 0;
+      padding: 0 0 0 15px;
       font-size: 10px;
       color: #333;
-      margin-left: 15px; }
+      margin-right: 15px; }
       .ads .card span i {
-        margin-left: 4px; }
+        margin-right: 4px; }
     .ads .card .name {
-      padding: 0 15px 0 0;
+      padding: 0 0 0 15px;
       color: #1c75bc; }
     .ads .card .key-words {
-      padding: 10px 15px 10px 0;
+      padding: 10px 0 10px 15px;
       margin-top: 10px;
       background-color: #ddd; }
       .ads .card .key-words span:first-child {
-        padding-right: 0 !important;
+        padding-left: 0 !important;
         font-size: 15px; }
       .ads .card .key-words .last {
         font-size: 15px;
         color: #1c75bc;
         font-weight: bold;
         position: absolute;
-        left: 2%; }
+        right: 2%; }
   .ads .swiper-container {
     padding-bottom: 40px !important; }
     .ads .swiper-container .swiper-pagination {
@@ -195,7 +195,7 @@ body {
 .ads-now-car-model .ads-now {
   border: 1px solid #ddd; }
   .ads-now-car-model .ads-now .head {
-    text-align: right;
+    text-align: left;
     border: 1px solid #eee;
     background-color: #ddd;
     padding: 10px; }
@@ -208,7 +208,7 @@ body {
         filter: grayscale(100%); }
     .ads-now-car-model .ads-now .card .card-title {
       font-size: 18px;
-      padding: 20px 20px 0 0;
+      padding: 20px 0 0 20px;
       color: #000 !important; }
       .ads-now-car-model .ads-now .card .card-title a {
         color: #000 !important;
@@ -217,16 +217,16 @@ body {
           color: #1c75bc !important; }
     .ads-now-car-model .ads-now .card span {
       display: inline-block;
-      margin-left: 25px;
-      padding: 20px 20px 0 0;
+      margin-right: 25px;
+      padding: 20px 0 0 20px;
       color: #666; }
       .ads-now-car-model .ads-now .card span i {
-        margin-left: 5px; }
+        margin-right: 5px; }
     .ads-now-car-model .ads-now .card .card-body {
       padding: 0; }
   .ads-now-car-model .ads-now .name {
     color: #1c75bc;
-    padding: 5px 20px 0 0; }
+    padding: 5px 0 0 20px; }
   .ads-now-car-model .ads-now .key-words {
     background-color: #ddd;
     position: inherit;
@@ -238,7 +238,7 @@ body {
       margin: 0; }
     .ads-now-car-model .ads-now .key-words .last {
       position: absolute;
-      left: 2%;
+      right: 2%;
       color: #1c75bc;
       font-weight: bold; }
   .ads-now-car-model .ads-now .card-grow .last {
@@ -251,7 +251,7 @@ body {
 .ads-now-car-model .car-model {
   border: 1px solid #ddd; }
   .ads-now-car-model .car-model .head {
-    text-align: right;
+    text-align: left;
     border: 1px solid #eee;
     background-color: #ddd;
     padding: 10px; }
@@ -268,20 +268,20 @@ body {
   .ads-now-car-model .ads-space h6 {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    right: 50%;
+    transform: translate(50%, -50%); }
 
 .ads-and-search .ads-now .card img {
   height: 100% !important; }
 
 .path {
-  text-align: right;
+  text-align: left;
   background-color: #ddd;
   padding: 20px; }
   .path span::before {
     font-family: "Font Awesome 5 Free";
-    margin-left: 6px;
     margin-right: 6px;
+    margin-left: 6px;
     content: "\f104";
     font-weight: 900;
     font-size: 13px; }
@@ -367,7 +367,7 @@ body {
   .search .country,
   .search .city {
     width: 50%;
-    float: right; }
+    float: left; }
     .search .country select,
     .search .city select {
       width: 90%;
@@ -379,7 +379,7 @@ body {
   .search .price input {
     width: 45%;
     margin: 4px;
-    float: right; }
+    float: left; }
   .search .btn {
     background-color: #51b224;
     border: 1px solid #51b224;
@@ -394,7 +394,7 @@ body {
 .ads-now {
   border: 1px solid #ddd; }
   .ads-now .head {
-    text-align: right;
+    text-align: left;
     border: 1px solid #eee;
     background-color: #ddd;
     padding: 10px; }
@@ -406,7 +406,7 @@ body {
         filter: grayscale(100%); }
     .ads-now .card .card-title {
       font-size: 18px;
-      padding: 5px 15px 0 0 !important; }
+      padding: 5px 0 0 15px !important; }
       .ads-now .card .card-title a {
         color: #000 !important;
         text-decoration: none; }
@@ -414,16 +414,16 @@ body {
           color: #1c75bc !important; }
     .ads-now .card span {
       display: inline-block;
-      margin-left: 25px;
-      padding: 10px 20px 0 0 !important;
+      margin-right: 25px;
+      padding: 10px 0 0 20px !important;
       color: #666; }
       .ads-now .card span i {
-        margin-left: 5px; }
+        margin-right: 5px; }
     .ads-now .card .card-body {
       padding: 0; }
   .ads-now .name {
     color: #1c75bc;
-    padding: 5px 20px 0 0; }
+    padding: 5px 0 0 20px; }
   .ads-now .key-words {
     background-color: #ddd;
     position: inherit;
@@ -435,7 +435,7 @@ body {
       margin: 0; }
     .ads-now .key-words .last {
       position: absolute;
-      left: 2%;
+      right: 2%;
       color: #1c75bc;
       font-weight: bold; }
   .ads-now .card-grow .last {
@@ -454,14 +454,14 @@ body {
 .show-ads .arrow-left-h6:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f0d9";
+  content: "\f0da";
   color: #2b79c3;
   font-size: 25px; }
 .show-ads .ads-info .swiper-container {
   width: 100%;
   height: 400px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   position: relative; }
   .show-ads .ads-info .swiper-container .special-ads {
     z-index: 3;
@@ -474,7 +474,7 @@ body {
     text-align: center;
     border-radius: 10px;
     color: #fff;
-    left: 3%;
+    right: 3%;
     top: 2%; }
 .show-ads .ads-info .swiper-slider .swiper-slide {
   background-size: cover;
@@ -498,14 +498,14 @@ body {
 .show-ads .ads-info .ads-header .header {
   margin-top: 15px;
   font-size: 20px;
-  float: right; }
+  float: left; }
 .show-ads .ads-info .ads-header .price {
   color: #fff;
   padding: 10px;
   width: 20%;
   text-align: center;
   font-size: 20px;
-  float: left;
+  float: right;
   border: 1px solid #ecb000;
   background-color: #ecb000; }
 .show-ads .ads-info .table-infor {
@@ -516,7 +516,7 @@ body {
   .show-ads .ads-info .table-infor .table {
     margin-bottom: 0 !important; }
   .show-ads .ads-info .table-infor td {
-    padding-right: 40px !important; }
+    padding-left: 40px !important; }
     .show-ads .ads-info .table-infor td .question {
       font-size: 15px; }
     .show-ads .ads-info .table-infor td .answer {
@@ -524,7 +524,7 @@ body {
       font-size: 14px; }
   .show-ads .ads-info .table-infor h6 {
     font-size: 25px;
-    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 10px;
     color: #1c75bc;
     margin: 10px 0px 20px 0px; }
@@ -539,7 +539,7 @@ body {
   .show-ads .ads-info .descr h6 {
     font-size: 25px;
     color: #1c75bc;
-    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 10px;
     margin: 10px 0px 20px 0px; }
     .show-ads .ads-info .descr h6 i {
@@ -553,7 +553,7 @@ body {
   .show-ads .ads-info .contact-data h6 {
     font-size: 25px;
     color: #1c75bc;
-    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 10px;
     margin: 10px 0px 20px 0px; }
     .show-ads .ads-info .contact-data h6 i {
@@ -561,13 +561,13 @@ body {
       font-size: 25px; }
   .show-ads .ads-info .contact-data ul {
     padding: 0;
-    padding-right: 20px; }
+    padding-left: 20px; }
     .show-ads .ads-info .contact-data ul li {
       display: inline-block;
-      margin-left: 20px; }
+      margin-right: 20px; }
       .show-ads .ads-info .contact-data ul li i {
         font-size: 20px;
-        margin-left: 10px;
+        margin-right: 10px;
         color: #444; }
       .show-ads .ads-info .contact-data ul li span {
         font-size: 20px;
@@ -587,7 +587,7 @@ body {
         color: #1c75bc; }
 .show-ads .ads-info .comments h6 {
   font-size: 25px;
-  padding-right: 20px;
+  padding-left: 20px;
   color: #1c75bc;
   padding-top: 10px;
   margin: 10px 0px 20px 0px;
@@ -599,7 +599,7 @@ body {
   border: 1px solid #eee;
   position: relative;
   padding: 15px;
-  padding-right: 15px;
+  padding-left: 15px;
   padding-bottom: 2px !important; }
   .show-ads .ads-info .comments .on-comment .com-name {
     font-size: 15px;
@@ -610,7 +610,7 @@ body {
   .show-ads .ads-info .comments .on-comment .time {
     position: absolute;
     top: 10%;
-    left: 1%;
+    right: 1%;
     font-size: 10px;
     color: #444; }
 .show-ads .ads-info .add-comment {
@@ -632,7 +632,7 @@ body {
     border: 1px solid #fff;
     position: absolute;
     top: -5%;
-    left: 45%;
+    right: 45%;
     text-align: center;
     font-size: 15px; }
   .show-ads .ads-info .add-comment form input {
@@ -656,7 +656,7 @@ body {
 .show-ads .related-ads .related-d-h6-before::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f0d9";
+  content: "\f0da";
   color: #2b79c3;
   font-size: 25px; }
 .show-ads .related-ads h6 {
@@ -674,7 +674,7 @@ body {
       filter: grayscale(100%); }
   .show-ads .related-ads .card .card-title {
     font-size: 18px;
-    padding: 20px 20px 0 0; }
+    padding: 20px 0 0 20px; }
     .show-ads .related-ads .card .card-title a {
       color: #000 !important;
       text-decoration: none; }
@@ -682,12 +682,12 @@ body {
         color: #1c75bc !important; }
   .show-ads .related-ads .card span {
     display: inline-block;
-    margin-left: 15px;
-    padding: 0px 20px 10px 0;
+    margin-right: 15px;
+    padding: 0px 0 10px 20px;
     color: #666;
     font-size: 14px; }
     .show-ads .related-ads .card span i {
-      margin-left: 5px; }
+      margin-right: 5px; }
   .show-ads .related-ads .card .card-body {
     padding: 0; }
   .show-ads .related-ads .card .key-words {
@@ -699,22 +699,22 @@ body {
     .show-ads .related-ads .card .key-words span {
       padding-top: 0 !important;
       margin: 0;
-      padding-right: 0 !important;
+      padding-left: 0 !important;
       font-size: 12px;
-      text-align: right; }
+      text-align: left; }
     .show-ads .related-ads .card .key-words .last {
       position: absolute;
-      left: 0%;
+      right: 0%;
       color: #1c75bc;
       font-weight: bold;
       font-size: 15px;
-      padding-left: 5px;
+      padding-right: 5px;
       padding-top: 3px !important; }
 
 .my-profile form {
   margin-top: 0 !important; }
 .my-profile h5 {
-  text-align: right;
+  text-align: left;
   margin-top: 60px;
   color: #1c75bc;
   font-weight: bold; }
@@ -722,7 +722,7 @@ body {
 .add-ads-add {
   margin-bottom: 80px; }
   .add-ads-add form {
-    text-align: right;
+    text-align: left;
     margin-top: 60px; }
     .add-ads-add form input,
     .add-ads-add form select,
@@ -755,7 +755,7 @@ body {
       border-radius: 5px; }
 
 .my-ads {
-  text-align: right;
+  text-align: left;
   margin-bottom: 150px; }
   .my-ads .card {
     border: 0;
@@ -770,13 +770,13 @@ body {
         color: #44474b;
         padding: 20px; }
       .my-ads .card .card-body span {
-        margin-left: 20px;
+        margin-right: 20px;
         font-size: 13px;
         color: #1c75bc;
         padding: 20px; }
         .my-ads .card .card-body span i {
           font-size: 12px;
-          margin-left: 10px;
+          margin-right: 10px;
           color: #1c75bc; }
       .my-ads .card .card-body .controls {
         background-color: #efebf9;
@@ -785,21 +785,21 @@ body {
         bottom: 0;
         width: 100%;
         line-height: 60px;
-        padding-right: 20px; }
+        padding-left: 20px; }
         .my-ads .card .card-body .controls .button-controls {
           background-color: #1c75bc;
           border: 1px solid #1c75bc;
           color: #fff; }
         .my-ads .card .card-body .controls .price {
           position: absolute;
-          left: 3%;
+          right: 3%;
           top: 0%;
           line-height: 60px;
           font-size: 16px;
           color: #1c75bc; }
 
 .edit-ads {
-  text-align: right;
+  text-align: left;
   margin-top: 70px;
   margin-bottom: 80px; }
   .edit-ads form input,
@@ -823,7 +823,7 @@ body {
     padding: 10px; }
 
 .my-inbox {
-  text-align: right;
+  text-align: left;
   margin-top: 60px;
   margin-bottom: 120px; }
   .my-inbox .card {
@@ -837,15 +837,15 @@ body {
       font-size: 15px; }
       .my-inbox .card .card-body .card-title i,
       .my-inbox .card .card-body .card-text i {
-        margin-left: 5px;
+        margin-right: 5px;
         color: #1c75bc; }
     .my-inbox .card .card-body .btn-danger {
       font-size: 13px; }
       .my-inbox .card .card-body .btn-danger i {
-        margin-left: 5px; }
+        margin-right: 5px; }
 
 .blacklist {
-  text-align: right;
+  text-align: left;
   margin-top: 90px;
   margin-bottom: 180px; }
   .blacklist h5 {
@@ -870,7 +870,7 @@ body {
 .who-us {
   margin-top: 80px;
   margin-bottom: 90px;
-  text-align: right; }
+  text-align: left; }
   .who-us .who-header {
     color: #1c75bc;
     font-size: 25px;
@@ -886,35 +886,35 @@ body {
 footer {
   background-color: #1c75bc; }
   footer .logo-content-logo {
-    padding-right: 10px; }
+    padding-left: 10px; }
   footer .logo {
     padding-bottom: 10px;
-    text-align: right;
+    text-align: left;
     position: relative;
     color: #fff; }
     footer .logo .logo-content {
-      text-align: right; }
+      text-align: left; }
       footer .logo .logo-content p {
         position: absolute;
-        right: 10%;
+        left: 10%;
         bottom: -1%;
         margin: 0; }
   footer .help-content {
-    padding-right: 90px;
+    padding-left: 90px;
     padding-top: 10px; }
     footer .help-content ul {
       list-style-type: square; }
       footer .help-content ul li {
         margin-top: 5px; }
   footer .social-content {
-    padding-right: 90px;
+    padding-left: 90px;
     padding-top: 10px; }
     footer .social-content .social i {
       display: inline-block;
       color: #fff;
       line-height: 30px;
       text-align: center;
-      margin-right: 15px;
+      margin-left: 15px;
       transition: all 0.5s ease; }
       footer .social-content .social i:hover {
         color: #073670; }
@@ -950,10 +950,10 @@ footer {
       font-size: 15px;
       color: #fff;
       margin-top: 20px;
-      float: right; }
+      float: left; }
     footer .copy .logo-funun {
       width: 50%;
-      float: left; }
+      float: right; }
       footer .copy .logo-funun img {
         width: 20%; }
 
@@ -979,14 +979,14 @@ footer {
   .top-header .info span:last-child {
     padding: 0 !important; }
   .top-header .social {
-    text-align: right !important;
+    text-align: left !important;
     margin-top: 5px; }
 
   .login {
     padding: 0 !important; }
     .login ul {
       padding: 0 !important;
-      padding-right: 0 !important; }
+      padding-left: 0 !important; }
 
   .cards .card p {
     margin: 0 !important; }
@@ -1000,15 +1000,15 @@ footer {
     position: inherit !important; }
 
   footer .logo-content-logo {
-    padding-right: 0px !important; }
+    padding-left: 0px !important; }
   footer input {
     width: 80% !important; }
   footer .help-content,
   footer .social-content {
-    padding-right: 0 !important; }
+    padding-left: 0 !important; }
   footer .logo-funun {
     width: 65% !important;
-    float: left; }
+    float: right; }
     footer .logo-funun img {
       width: 20%; }
 
@@ -1020,26 +1020,26 @@ footer {
   .top-header .info span:last-child {
     padding: 0 !important; }
   .top-header .social {
-    text-align: right !important;
+    text-align: left !important;
     margin-top: 5px; }
 
   .login {
     padding: 0 !important; }
     .login ul {
       padding: 0 !important;
-      padding-right: 0 !important; }
+      padding-left: 0 !important; }
 
   .search-bar form .all-mark {
     top: 30.2%;
-    margin-right: 4px;
+    margin-left: 4px;
     width: 6.5%; }
   .search-bar form .car-select {
     top: 46.2%;
-    margin-right: 4px;
+    margin-left: 4px;
     width: 7.5%; }
   .search-bar form .place {
     top: 63.2%;
-    margin-right: 4px;
+    margin-left: 4px;
     width: 7.5%; }
   .search-bar form input,
   .search-bar form select {
@@ -1064,23 +1064,23 @@ footer {
 
   footer .help-content,
   footer .social-content {
-    padding-right: 0 !important; }
+    padding-left: 0 !important; }
   footer input {
     width: 80% !important; }
   footer .copy .logo-funun {
     width: 100% !important;
-    text-align: right; }
+    text-align: left; }
     footer .copy .logo-funun img {
       width: 40% !important;
       margin-top: 15px; }
 
   .show-ads .ads-info .ads-header .price {
-    float: right;
+    float: left;
     width: 50% !important;
     margin-top: 10px; }
 
   .show-ads .ads-info .table-infor td {
-    padding-right: 0 !important; }
+    padding-left: 0 !important; }
 
   .show-ads .ads-info .add-comment .head-comment-add {
     width: 25% !important; }
@@ -1095,10 +1095,8 @@ footer {
 
   .my-ads .card .card-body .controls .price {
     position: absolute;
-    left: 72%;
+    right: 72%;
     top: 44%; } }
 @media (max-width: 320px) {
   .show-ads .ads-info .table-infor td {
-    padding-right: 0 !important; } }
-
-/*# sourceMappingURL=style.css.map */
+    padding-left: 0 !important; } }
